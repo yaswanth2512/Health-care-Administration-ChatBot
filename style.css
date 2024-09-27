@@ -1,0 +1,111 @@
+/* Minimal font style and responsive design */
+body, h1, h2, p, button {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light and Dark Theme Styling */
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color:#039578 ;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+    transition:hover;
+}
+
+.theme-toggle img:hover {
+    transform: rotate(360deg); /* Rotate on hover for interaction effect */
+}
+
+/* Section Styling */
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .section {
+    background-color: #424242;
+}
+
+h2 {
+    font-size: 24px;
+    color: #00796b;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+body.dark-theme p {
+    color: #f4f4f4;
+}
+
+/* Footer Styling */
+footer {
+    background-color:#039578;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Toggle Dark Mode */
+body.dark-theme h2 {
+    color: #80cbc4;
+}
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008168;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff8c00;
+}

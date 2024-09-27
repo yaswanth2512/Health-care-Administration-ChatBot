@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Administration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body class="light-theme">
+
+<!-- Header Section -->
+<header>
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <img src="2.png" alt="Toggle Theme" id="theme-icon">
+    </div>
+    <h1 class="main-heading">CareMedi Administrations</h1>
+    <p>Makes your Dreams possible</p>
+    
+    
+</header>
+
+<!-- Main Content Section -->
+<div class="container">
+    <section class="section">
+        <h2> Our Services</h2>
+        <div class="button-container">
+            <button onclick="showInfo('insurance')">Insurance Claims</button>
+            <button onclick="showInfo('billing')">Patient Billing Inquiries</button>
+            <button onclick="showInfo('reminders')">Appointment & Billing Reminders</button>
+            <button onclick="showInfo('feedback')">Feedback & Support</button>
+            <button onclick="showInfo('contact')">Contact Us</button>
+        </div>
+        <div id="info-display" class="info-display">
+            <!-- Info will be displayed here -->
+        </div>
+    </section>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Healthcare Administration | All rights reserved</p>
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
